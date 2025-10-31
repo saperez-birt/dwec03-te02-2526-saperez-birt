@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <title>Login</title>
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <div>
+                    <a href="home.html">
+                        <img src="assets/images/logo.png" alt="Logo Pixel Draft" class="logo">
+                    </a>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item active">
+                        <a href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="log-out">Log out</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="username"></a>
+                    </li>
+                    <li class="nav-item circle"></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="welcome">
+            <div class="welcome-slogan">
+                <img src="assets/images/big-logo.png" alt="Logo Pixel Draft" class="big-logo" id="big-logo">
+                <p>Bienvenido a Pixel Draft <span id="user"></span>! Rellena la cuadrícula siguiendo los patrones de numeros y colores y consigue crear dibujos íncreibles.</p>
+            </div>
+            <div class="game-levels">
+                <h2>Modos de juego</h2>
+                <div class="levels">
+                    <button nivel-dificultad="easy">Facil</button>
+
+                    <button nivel-dificultad="medium">Medio</button>
+
+                    <button nivel-dificultad="hard">Dificil</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="manual-container">
+            <div class="manual">
+                <h2>INSTRUCCIONES</h2>
+                <ul>
+                    <li>
+                        El objetivo principal del juego es colorear correctamente todos los pixeles de la cuadricula teniendo en cuenta la figura de referencia antes de que acabe el tiempo.
+                    </li>
+                    <li>
+                        Observa la figura del ejemplo: cada color de la paleta tiene un número que coincide con los números de los colores del dibujo.
+                        Usa estos numeros para guiarte al colorear.
+                    </li>
+                    <li>
+                        Para ello, selecciona un color de la paleta haciendo clicl sobre él. Para pintar los pixeles de la cuadricula, haz clic o arrastra el cursor sobre ellos mientras mantienes presionado el botón izquierdo del ratón.
+                    </li>
+                    <li>
+                        Obtendrás +1 punto por cada pixel coloreado correctamente y perderas un punto por cada error. Si corriges un pixel mal coloreado, no recuperarás el punto perdido.
+                    </li>
+                    <li>
+                        Completa toda la figura antes de que se agote el tiempo para superar el nivel y sumar tu puntuacion.
+                    </li>
+                    <li>
+                        <h3 style="text-align: center;">PUEDES PAUSAR EL JUEGO PULSADO LA TECLA 'P'</h3>
+                    </li>
+                </ul>
+                <div class="game-button">
+                    <button id="start">Empezar</button>
+                    <button id="close-manual">Cerrar</button>
+                </div>
+                
+            
+            </div>
+        </section>
+
+        <script type="module" src="js/menu.js"></script>
+    </body>
+</html>

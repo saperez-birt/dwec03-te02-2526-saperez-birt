@@ -1,0 +1,7 @@
+{
+  "difficulties": {
+    "easy": { "name": "Fácil", "gridSize": { "rows": 8, "cols": 8 }, "timeLimit": 300, "showNumbers": true, "showGrid": true, "timeBonus": true },
+    "medium": { "name": "Media", "gridSize": { "rows": 12, "cols": 12 }, "timeLimit": 180, "showNumbers": false, "showGrid": true, "timeBonus": false },
+    "hard": { "name": "Difícil", "gridSize": { "rows": 16, "cols": 16 }, "timeLimit": 120, "showNumbers": false, "showGrid": false, "timeBonus": true }
+  }
+}

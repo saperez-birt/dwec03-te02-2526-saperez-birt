@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pixel Draft - Juego</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="game-nav">
+            <div class="info-container">
+                <h3>TIEMPO</h3>
+                <div class="info-box" id="timer-box">
+                    <span id="timer">0:00</span>
+                </div>
+            </div>
+            
+            <div class="game-logo">
+                <img src="assets/images/logo.png" alt="Pixel Draft Logo" class="logo">
+            </div>
+            
+            <div class="info-container">
+                <h3>PUNTOS</h3>
+                <div class="info-box" id="score-box">
+                    <span id="score">0</span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="game-container">
+            <div class="panel panel-left">
+                <div class="palette-section">
+                    <div class="palette-grid" id="color-palette"></div>
+                </div>
+                
+                <div class="reference-section">
+                    <h3>REFERENCIA</h3>
+                    <div id="reference-image-container"></div>
+                </div>
+            </div>
+
+            <div class="panel panel-right">
+                <h3>TABLERO</h3>
+                <div id="game-board"></div>
+            </div>
+        </div>
+
+        <div id="pause-overlay" class="overlay hidden">
+            <h1 class="blink">JUEGO EN PAUSA</h1>
+            <p>Presiona P para continuar</p>
+        </div>
+
+        <div id="level-complete-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>¡NIVEL COMPLETADO!</h2>
+                <div class="results">
+                    <p>Puntos obtenidos: <span id="level-points">0</span></p>
+                    <p>Puntos máximos: <span id="max-points">0</span></p>
+                    <p>Tiempo restante: <span id="time-remaining">0</span>s</p>
+                    <p>Errores cometidos: <span id="errors-count">0</span></p>
+                    <p class="bonus-message hidden" id="bonus-message">¡Sin errores! Tiempo añadido al siguiente nivel</p>
+                </div>
+                <div class="modal-buttons">
+                    <button id="next-level-btn">SIGUIENTE NIVEL</button>
+                    <button id="retry-level-btn">REINTENTAR</button>
+                    <button id="menu-btn">MENÚ PRINCIPAL</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-over-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>¡TIEMPO AGOTADO!</h2>
+                <div class="results">
+                    <p>Puntuación total: <span id="final-score">0</span></p>
+                    <p>Niveles completados: <span id="levels-completed">0</span></p>
+                    <p>Mejor nivel: <span id="best-level">0</span></p>
+                </div>
+                <div class="modal-buttons">
+                    <button id="restart-game-btn">REINICIAR</button>
+                    <button id="menu-gameover-btn">MENÚ PRINCIPAL</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="victory-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>¡FELICIDADES!</h2>
+                <h3>Has completado todos los niveles</h3>
+                <div class="results">
+                    <p>Puntuación final: <span id="victory-score">0</span></p>
+                    <p>Tiempo total: <span id="total-time">0</span></p>
+                    <p>Errores totales: <span id="total-errors">0</span></p>
+                </div>
+                <div class="modal-buttons">
+                    <button id="restart-victory-btn">REINICIAR</button>
+                    <button id="menu-victory-btn">MENÚ PRINCIPAL</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/game.js"></script>
+    </body>
+</html>

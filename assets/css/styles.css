@@ -1,0 +1,767 @@
+
+/* --- FUENTES ---  */
+
+@font-face {
+    font-family: 'Post No Bills Colombo Medium Regular';
+    src: url('../fonts/PostNoBillsColombo-Medium.woff');
+}
+@font-face {
+    font-family: 'Post No Bills Colombo SemiBold Regular';
+    src: url('../fonts/PostNoBillsColombo-SemiBold.woff');
+}
+
+@font-face {
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    src: url('../fonts/PostNoBillsColombo-ExtraBold.woff');
+}
+
+/* --- ESTILOS GENERALES --- */
+
+body {
+    background-image: url('../images/fondo-grande.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Post No Bills Colombo Medium Regular', sans-serif;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    
+}
+
+/* --- ESTILOS NAV --- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(36, 37, 84, 80%);
+    padding: 1.5rem 2rem;
+}
+
+.nav-logo {
+    width: 100%;
+}
+
+.logo {
+    width:100%;
+    max-width: 240px;
+    margin: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 32px;
+    margin: 0;
+}
+
+.nav-item a {
+    color: #B4A5F3;
+    padding-left: 2rem;
+    margin: 0;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Post No Bills Colombo ExtraBold Regular";
+}
+
+.nav-item a:hover {
+    color: #6f60c7;
+}
+
+.active a {
+    color: #E2E5FF !important;
+}
+
+
+.circle {
+    background-color: #8174B3;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+
+.circle:hover {
+        background-color: #6f60c7;
+}
+
+
+
+/* --- ESTILOS HOME --- */
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 85vh;
+}
+
+.big-logo {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.big-logo:hover {
+    transform: scale(1.05);
+}
+.login-button {
+    width: 100%;
+    overflow: hidden;
+}
+
+.login-button a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Post No Bills Colombo SemiBold Regular';
+    padding: 12px 28px;
+    letter-spacing: 5%;
+    background-color: #262B5B;
+    border: 2px solid #8174B3;
+    color: #8174B3;
+    transition: transform 0.2s ease-in-out;
+}
+
+.login-button a:hover {
+    transform: scale(1.05);
+}
+
+
+/* --- ESTILOS LOGIN --- */
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/fondo-login.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 15px solid #242554;
+    border-radius: 30px;
+    width: 1000px;
+    min-height: 500px;
+    margin: 5rem;
+    padding: 3rem;
+    box-shadow: 4px 8px 8px rgba(36, 37, 84, 0.5);
+}
+
+#login-form h1 {
+    color: #B4A5F3;
+    font-family: "Post No Bills Colombo ExtraBold Regular";
+    font-size: 57px;
+    margin: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+#login-form label {
+    font-family: 'Post No Bills Colombo SemiBold Regular';
+    font-size: 24px;
+    color: #B4A5F3;
+    padding: 0.5rem;
+    width: 75%;
+    text-align: left;
+}
+
+#login-form input {
+    width: 75%;
+    padding: 0.6rem;
+    background-color: #E2E5FF;
+    font-family: 'Post No Bills Colombo SemiBold Regular';
+    font-size: 16px;
+    color: #2F1E72;
+    border: 5px solid #2F1E72;
+    outline: none;
+}
+
+#login-form input::placeholder {
+    color: rgba(47, 30, 114, 0.9);
+    font-size: 16px;
+}
+
+.login-button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.login-button button {
+    padding: 12px 28px;
+    margin: 2rem;
+    background-color: #262B5B;
+    border: 2px solid #E2E5FF;
+    font-family: 'Post No Bills Colombo SemiBold Regular';
+    color: #E2E5FF;
+    font-size: 24px;
+    transition: transform 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    -ms-transition: transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+}
+
+.login-button button:hover {
+    box-shadow: 0px 2px 4px rgba(47, 30, 114, 80%);
+    transform: scale(1.05);
+}
+
+/* --- ESTILOS MENU --- */
+
+.welcome {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-slogan {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 650px;
+}
+
+.welcome-slogan img {
+    margin-top: 3rem;
+}
+
+.welcome-slogan p {
+    color: #96B6EF;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.game-levels {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 650px; 
+}
+
+.game-levels h2 {
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    font-size: 50px;
+    color: #B4A5F3;
+}
+
+.levels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.levels button {
+    background-image: url(../images/fondo-timer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 175px;
+    height: 94px;
+    outline: none;
+    border: 2px solid #242554;
+    color: #B4A5F3;
+    font-size: 36px;
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    transition: transform 0.2s ease-in-out;
+}
+
+.levels button:hover {
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+}
+
+.manual-container {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100vh - 100px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.manual {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/fondo-instrucciones2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 15px solid #1B1A44;
+    min-height: 400px;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+.manual h2 {
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    font-size: 55px;
+    color: #c3b7f1;
+    letter-spacing: 8%;
+    margin: 0;
+}
+
+.manual ul {
+    width: 80%;
+    background-color: rgba(36, 37, 84, 90%);
+    padding: 2rem 2rem 1rem 2rem;
+    border: 12px solid #1B1A44;
+
+}
+
+.manual ul li:last-child {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.manual li {
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    color: #d7d1ee;
+    font-size: 1.23rem;
+    text-align: justify;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+.manual h3 {
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    font-size: 25px;
+    color: #ccc4eb;
+    letter-spacing: 8%;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.game-button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.game-button button {
+    padding: 10px 28px;
+    margin: 1rem;
+    background-color: #262B5B;
+    border: 4px solid #a59bcc;
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    letter-spacing: 2px;
+    color: #a59bcc;
+    font-size: 24px;
+    transition: transform 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    -ms-transition: transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+}
+
+.game-button button:hover {
+    box-shadow: 0px 2px 4px rgba(47, 30, 114, 80%);
+    transform: scale(1.05);
+}
+
+/* --- ESTILOS GAME --- */
+
+.game-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #B4A5F3;
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+}
+
+.info-container h3 {
+    margin: 0.8rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #B4A5F3;
+}
+
+.info-box {
+    background-image: url(../images/fondo-timer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 175px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #B4A5F3;
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+}
+
+.game-logo img {
+    width: 350px;
+    height: auto;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 4rem;
+    min-height: calc(100vh - 200px);
+    width: 100%;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.panel-left {
+    gap: 2rem;
+}
+
+.palette-section {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 100%;
+}
+.palette-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 12px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.color-swatch {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #242554cc;
+    cursor: pointer;
+    transition: all 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    -webkit-transition: all 150ms var(--ease-standard);
+    -moz-transition: all 150ms var(--ease-standard);
+    -ms-transition: all 150ms var(--ease-standard);
+    -o-transition: all 150ms var(--ease-standard);
+}
+
+.color-swatch:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
+}
+
+.color-swatch.selected {
+    border: 5px solid #242554cc;
+    transform: scale(1.15);
+}
+
+.color-number {
+    font-size: 2rem;
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    color: #242554cc;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.reference-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(36, 37, 84, 80%);
+    padding: 2rem;
+    width: 100%;
+
+}
+
+.reference-section h3 {
+    color: #B4A5F3; 
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    font-size: 3rem;
+    margin: 0 0 16px 0;
+    letter-spacing: 2px;
+}
+
+#reference-image-container {
+    border: 5px solid #242554cc;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reference-grid {
+    border-collapse: collapse;
+    background-color: #E2E5FF;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.reference-cell {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ref-number {
+    color: #242554cc;;
+    text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.8);
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+}
+
+.panel-right {
+    background-color: rgba(36, 37, 84, 80%);
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+    margin-top: 130px;
+}
+
+.panel-right h3 {
+    color: #B4A5F3; 
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    font-size: 3rem;
+    margin: 0 0 16px 0;
+    letter-spacing: 2px;
+}
+
+#game-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pixel-grid {
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 253, 1);
+    border: 5px solid rgba(94, 82, 64, 1);;
+
+}
+
+.pixel-cell {
+    border: 1px solid  rgba(19, 52, 59, 1);
+    cursor: pointer;
+    background-color: white;
+    transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    padding: 0;
+    -webkit-transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    -moz-transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    -ms-transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    -o-transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pixel-cell:hover {
+    transform: scale(1.1);
+    border: 2px solid rgba(94, 82, 64, 1);
+}
+
+
+/* Modales */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background-image: url(../images/fondo-login.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 15px solid #1B1A44;
+    padding: 32px;
+    min-width: 600px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04);
+}
+
+.modal-content h2 {
+    color: #d7d1ee;
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    font-size: 3rem;
+    margin: 0 0 16px 0;
+    letter-spacing: 2px;
+}
+
+.modal-content h3 {
+    color: #d7d1ee;
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    font-size: 3rem;
+    margin: 0 0 16px 0;
+    letter-spacing: 2px;
+}
+
+.results {
+    background-color: rgba(36, 37, 84, 90%);
+    padding: 32px;
+    border: 12px solid #1B1A44;
+    width: 70%;
+    margin: 16px 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
+    0 2px 4px -1px rgba(0, 0, 0, 0.02);
+}
+
+.results p {
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    color: #d7d1ee;
+    font-size: 1.23rem;
+    text-align: justify;
+    letter-spacing: 3px;
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.results span {
+    color: #d7d1ee;
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    font-size: 1.23rem;
+}
+
+.bonus-message {
+    color: red;
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    text-align: center;
+    margin-top: 16px;
+    font-size: 2rem;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.modal-buttons button {
+    padding: 10px 28px;
+    margin: 1rem;
+    background-color: #262B5B;
+    border: 4px solid #a59bcc;
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    letter-spacing: 2px;
+    color: #a59bcc;
+    font-size: 24px;
+    cursor: pointer;
+    transition:150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-buttons button:hover {
+    box-shadow: 0px 2px 4px rgba(47, 30, 114, 80%);
+    transform: scale(1.05);
+}
+
+
+/* Overlay de pausa */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay {
+    pointer-events: none; /* Deja pasar eventos de puntero */
+}
+
+
+.overlay h1 {
+    color: #d7d1ee;
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    font-size: 3rem;
+    margin: 0 0 16px 0;
+    letter-spacing: 2px;
+}
+
+.overlay p {
+    color: #d7d1ee;
+    font-family: 'Post No Bills Colombo ExtraBold Regular';
+    font-size: 1.2rem;
+    margin: 0 0 16px 0;
+    letter-spacing: 2px;
+}
+
+/* Animación de parpadeo */
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.3; }
+}
+
+.blink {
+    animation: blink 1.5s infinite;
+}
+
+
+
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
